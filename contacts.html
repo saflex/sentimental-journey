@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<title>html</title>
+	<meta name="viewport" content="width=400">
+	<link rel="stylesheet" href="plugins/form-attach/style.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="plugins/CustomScrollbarr/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="plugins/fotorama/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="plugins/SlickSlider/slick/slick.css"/>
+	<link href="css/bundle.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="plugins/formstyler/jquery.formstyler.css" />
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="plugins/SlickSlider/slick/slick.js"></script>
+	<script src="plugins/CustomScrollbarr/jquery.mCustomScrollbar.js"></script>
+	<script src="plugins/formstyler/jquery.formstyler.js"></script>
+	<script src="plugins/fotorama/fotorama.js"></script>
+	<script src="plugins/ckeditor/ckeditor.js"></script>
+	<script src="plugins/ckeditor/js/sample.js"></script>
+	<script type="text/javascript" src="plugins/form-attach/scripts.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header>
+
+				<!-- mob menu -->
+				<div class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-md hidden-lg" >
+					<div class="container">
+						<div class="navbar-header">
+
+							<button type="button" class="navbar-toggle fll"  data-toggle="collapse" data-target="#responsive-menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a href="#" class="exit"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+							</a>
+							<div class="ava-img-area dropdown" data-toggle="dropdown">
+								<a href="#">
+									<div class="pluso-area"></div>
+								</a>
+								<img src="img/av1.png">
+								<span>Лозовский Антон</span>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Карта историй</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Фотогрфии</a>
+									</li>
+									<li>
+										<a href="#">Настройки</a>
+									</li>
+									<li class="divider"></li>
+
+									<div class="clear-btn">
+
+										<a href="#" class="btn btn-primary">Добавить историю</a>
+										<a href="#" class="btn btn-primary">Добавить фото</a>
+
+									</div>
+								</ul>
+
+							</div>
+
+						</div>
+						<div class="collapse navbar-collapse" id="responsive-menu">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">О проекте</a>
+								</li>
+								<li>
+									<a href="#">Истории</a>
+								</li>
+								<li>
+									<a href="#">Карта</a>
+								</li>
+								<li>
+									<a href="#">Участники</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- mob menu -->
+
+				<div class="top-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-2"></div>
+							<div class="col-lg-9 col-md-10">
+								<ul>
+									<li>
+										<a class="active" href="#">О проекте</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Карта</a>
+									</li>
+									<li>
+										<a href="#">Участники</a>
+									</li>
+								</ul>
+								<a href="#" class="exit"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+								</a>
+								<div class="ava-img-area dropdown" data-toggle="dropdown">
+									<img src="img/av1.png">
+									<span>Лозовский Антон</span>
+
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Карта историй</a>
+										</li>
+										<li>
+											<a href="#">Истории</a>
+										</li>
+										<li>
+											<a href="#">Фотогрфии</a>
+										</li>
+										<li>
+											<a href="#">Настройки</a>
+										</li>
+										<li class="divider"></li>
+										<div class="clear-btn">
+											<a href="#" class="btn btn-primary">Добавить историю</a>
+											<a href="#" class="btn btn-primary">Добавить фото</a>
+										</div>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-2 col-xs-3">
+								<a href="#">
+									<div class="logo"></div>
+								</a>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-9">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Поиск по сайту">
+									<span class="input-group-btn">
+										<button class="btn btn-secondary" type="button">.</button>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-5 hidden-xs">
+								<div class="history-area">
+									<h3>Расскажите свою историю!</h3>
+									<h4>Это увлекательно и просто!</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="main-block-adress user-table faq">
+				<div class="container">
+					<div class="left-area-faq">
+						<div class="bread-pagg">
+							<a href="#" class="home">Главная</a>
+							/
+							<span>Вопросы и ответы</span>
+						</div>
+
+						<div class="ul-area-menu">
+							<ul>
+								<li>
+									<a class="ab1" href="#">О проекте</a>
+								</li>
+								<li class="active">
+									<a class="ab2" href="#">Контакты</a>
+								</li>
+								<li>
+									<a class="ab3" href="#">Вопросы и ответы</a>
+								</li>
+								<li>
+									<a class="ab4" href="#">Политики</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="right-area-faq">
+
+						<div class="team-area txt">
+							<h3>Контакты</h3>
+							<p>
+								Государственное бюджетное учреждение культуры Владимирской области «Муромский историко-художественный музей»
+							</p>
+							<div class="admin-area row">
+								<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
+									<h4>Администрация музея</h4>
+									<p>ул. Московская, д. 13, г. Муром, Владимирская обл., 602267</p>
+									<p>(49234) 3-23-59, 3-35-47</p>
+									<a href="mailto:oklandia@mail.ru" class="mail-post">oklandia@mail.ru</a>
+								</div>
+								<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
+									<h4>Руководитель проекта</h4>
+									<p>
+										<img src="img/ava-uc.png">Елена Владимировна Кулагина</p>
+									<p>(49234) 3-62-60  (49234)3-35-47</p>
+									<a href="mailto:8872844@museum-murom.ru" class="mail-post">8872844@museum-murom.ru</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="bg-main-area"></div>
+
+						<div class="team-area txt feedback">
+
+							<h3>Обратная связь</h3>
+
+							<form>
+
+								<div class="sm-fr clearfix">
+									<div class=" n-form">
+
+										<label for="">ФИО *</label>
+
+										<input class="form-control" type="text"></div>
+								</div>
+
+								<div class="sm-fr clearfix">
+									<div class=" n-form">
+
+										<label for="">E-mail *</label>
+
+										<input class="form-control" type="text"></div>
+								</div>
+
+								<div class="sm-fr clearfix">
+									<div class=" n-form">
+
+										<label for="">Тема</label>
+
+										<select class="formstyler">
+											<option>Тема 1</option>
+											<option>Тема 2</option>
+										</select>
+									</div>
+
+								</div>
+
+								<div class="sm-fr clearfix">
+									<div class=" n-form">
+
+										<label for="">Сообщение *</label>
+
+										<input class="form-control" type="text"></div>
+								</div>
+
+								<div class="p-rel">
+
+									<div class="type_file tril_file" id="file-upload_1">
+										<input type="file" class="inputFile" name="file1" value="" />
+										<div class="fonTypeFile">Прикрепить файл</div>
+										<i class="file-upload_1"></i>
+									</div>
+
+									<div class="type_file tril_file" id="file-upload_2" style="display: none;">
+										<input type="file" class="inputFile" name="file2" value="" />
+										<div class="fonTypeFile">Прикрепить файл</div>
+										<i class="file-upload_2"></i>
+									</div>
+
+									<div class="type_file tril_file" id="file-upload_3" style="display: none;">
+										<input type="file" class="inputFile" name="file3" value="" />
+										<div class="fonTypeFile">Прикрепить файл</div>
+										<i class="file-upload_3"></i>
+									</div>
+
+									<div class="type_file tril_file" id="file-upload_4" style="display: none;">
+										<input type="file" class="inputFile" name="file4" value="" />
+										<div class="fonTypeFile">Прикрепить файл</div>
+										<i class="file-upload_4"></i>
+									</div>
+
+									<div class="b_add">
+										<span id="add">прикрепить еще файл</span>
+									</div>
+									<button class="btn btns flr">Отправить</button>
+								</div>
+							</form>
+
+						</div>
+
+					</div>
+				</section>
+			</div>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="foot-menu fll">
+						<div class="cont-area">
+							<a href="#">Контакты</a>
+							<a href="#">Вопросы и ответы</a>
+							<a href="#">Политики</a>
+						</div>
+						<p class="hidden-xs">© 1998-2016, Муромский историко-художественный музей</p>
+						<a href="http://bel-kot.com" target="_blank" class="hdlk">"Создание сайта - Белый Кот"</a>
+					</div>
+
+					<div class="foot-menu flr">
+						<img src="img/plogo.png">
+						<img src="img/slogo.png"></div>
+					<p class="hidden-sm hidden-md hidden-lg">© 1998-2016, Муромский историко-художественный музей</p>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- инициализация скриптов -->
+
+		<script src="js/scripts.js"></script>
+
+		<!-- инициализация скриптов -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+section.main-block {
+    background: url(../img/bg.jpg) 0 0 no-repeat;
+    color: #fff;
+    padding-top: 168px;
+    padding-bottom: 255px;
+    background-position: center center;
+}
+
+section.main-block h1, section.main-block h2{
+	text-align: center;
+	font-family: 'AlexandraZeferinoOne';
+}
+
+
+section.main-block h1:before{
+	width: 120px;
+	height: 1px;
+	background: #fff;
+	content: '';
+	    margin-left: -142px;
+    margin-top: 28px;
+	position: absolute;
+}
+
+section.main-block h1:after{
+	width: 120px;
+	height: 1px;
+	background: #fff;
+	content: '';
+	    margin-left: 25px;
+    margin-top: 28px;
+	position: absolute;
+}
+
+.col-area-v.row {
+    max-width: 1030px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+span.nf1:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 16px;
+    background: url(../img/slb1.png) 0 0 no-repeat;
+    margin-left: -50px;
+    margin-top: 3px;
+}
+
+span.nf1:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 92px;
+    background: url(../img/after-line.png) 0 0 no-repeat;
+    margin-top: -12px;
+    top: 6px;
+    right: -30px;
+}
+
+span.nf2 {
+    padding-left: 70px !important;
+    padding-right: 11px;
+}
+
+span.nf2:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 92px;
+    background: url(../img/after-line.png) 0 0 no-repeat;
+    margin-top: -12px;
+    top: 6px;
+    right: -10px;
+}
+
+span.nf2:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 27px;
+    background: url(../img/slb2.png) 0 0 no-repeat;
+    margin-left: -50px;
+    margin-top: -3px;
+}
+
+span.nf3:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 31px;
+    background: url(../img/slb3.png) 0 0 no-repeat;
+    margin-left: -50px;
+    margin-top: 0px;
+}
+
+section.main-block h2 {
+    font-size: 140px;
+    line-height: 70px;
+    text-shadow: 1.1px 2.8px 0 rgba(23, 23, 23, 0.4);
+}
+
+.col-area-v.row span{
+	font-family: 'Noto Serif', serif;
+	text-shadow: 0.7px 1.9px 0 rgba(23, 23, 23, 0.5);
+	font-size: 16px;
+	padding-left: 65px;
+	display: block;
+	line-height: 1.2em;
+}
+
+section.main-block h1{
+	font-size: 72px;
+	 text-shadow: 1.1px 2.8px 0 rgba(23, 23, 23, 0.4);
+}

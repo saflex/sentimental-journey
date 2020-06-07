@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<title>html</title>
+	<link href="plugins/fotorama/fotorama.css" rel="stylesheet">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" type="text/css" href="plugins/SlickSlider/slick/slick.css"/>
+	<link href="css/bundle.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="plugins/formstyler/jquery.formstyler.css" />
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="plugins/SlickSlider/slick/slick.js"></script>
+	<script src="plugins/formstyler/jquery.formstyler.js"></script>
+	<script src="plugins/fotorama/fotorama.js"></script>
+	
+
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header>
+
+				<!-- mob menu -->
+				<div class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-md hidden-lg" >
+					<div class="container">
+						<div class="navbar-header">
+
+							<button type="button" class="navbar-toggle fll"  data-toggle="collapse" data-target="#responsive-menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<div class="reg-area">
+								<a href="#" data-toggle="modal" data-target="#enterModal">Вход</a>
+								<a class="activers" href="#" data-toggle="modal" data-target="#regModal">Регистрация</a>
+							</div>
+							<a href="#" data-toggle="modal" data-target="#regModal">
+								<div class="pluso-area"></div>
+							</a>
+
+						</div>
+						<div class="collapse navbar-collapse" id="responsive-menu">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">О проекте</a>
+								</li>
+								<li>
+									<a href="#">Истории</a>
+								</li>
+								<li>
+									<a href="#">Карта</a>
+								</li>
+								<li>
+									<a href="#">Участники</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- mob menu -->
+
+				<div class="top-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-2"></div>
+							<div class="col-lg-9 col-md-10">
+								<ul>
+									<li>
+										<a class="active" href="#">О проекте</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Карта</a>
+									</li>
+									<li>
+										<a href="#">Участники</a>
+									</li>
+								</ul>
+
+								<div class="reg-area">
+									<a href="#" data-toggle="modal" data-target="#enterModal">Вход</a>
+									<a class="activers" href="#" data-toggle="modal" data-target="#regModal">Регистрация</a>
+								</div>
+								<a href="#">
+									<div class="pluso-area" data-toggle="modal" data-target="#regModal"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-2 col-xs-3">
+								<a href="#">
+									<div class="logo"></div>
+								</a>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-9">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Поиск по сайту">
+									<span class="input-group-btn">
+										<button class="btn btn-secondary" type="button">.</button>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-5 hidden-xs">
+								<div class="history-area">
+									<h3>Расскажите свою историю!</h3>
+									<h4>Это увлекательно и просто!</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="main-block">
+				<div class="container">
+					<div class="row">
+						<h1>Проект</h1>
+						<h2>«Сентиментальное путешествие»</h2>
+						<div class="col-area-v row">
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<div class="offer-section-area">
+									<span class="nf1">Воспоминания и фотографии горожан</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<div class="offer-section-area">
+									<span class="nf2">Карта памятных мест</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<div class="offer-section-area">
+									<span class="nf3">
+										Публикация своих историй и продолжение историй других авторов
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main-block-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="trigger-area">
+								<div class="row">
+									<div class="col-md-6 col-sm-12 col-xs-12"> <strong>12 935</strong>
+									</div>
+									<div class="col-md-6 col-sm-12 col-xs-12">
+										<span>Историй опубликовано</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="trigger-area">
+								<div class="row">
+									<div class="col-md-6 col-sm-12 col-xs-12"> <strong>349 873</strong>
+									</div>
+									<div class="col-md-6 col-sm-12 col-xs-12">
+										<span>Фотографий Добавлено</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-4">
+							<div class="trigger-area">
+								<div class="row">
+									<div class="col-md-6 col-sm-12 col-xs-12">
+										<strong>23 498</strong>
+									</div>
+									<div class="col-md-6 col-sm-12 col-xs-12">
+										<span>Участников Проекта</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main-block-adress">
+				<div class="container">
+					<div class="adress-area">
+						<div class="row">
+							<div class="col-md-6 col-sm-4 col-xs-4">
+								<div class="history-nl">Карта историй</div>
+							</div>
+							<div class="col-md-6 col-sm-8 col-xs-8">
+								<div class="gds-nl">
+									<strong>Показывать за годы:</strong>
+									<input class="form-control" value="1640">
+									<span>-</span>
+									<input class="form-control" value="2016"></div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Поиск по сайту">
+							<span class="input-group-btn">
+								<button class="btn btn-secondary" type="button">поиск</button>
+							</span>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="mp">
+				<div id="map"></div>
+			</section>
+
+			<section class="main-middle-block">
+				<div class="container">
+					<div class="col-md-12">
+						<div class="hst-area">
+							<div class="fll left-cv">Недавно добавленные истории</div>
+							<div class="flr right-cv hidden-xs">
+								<a href="#">Все истории</a>
+							</div>
+						</div>
+						<div class="row slider single-item">
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1"> <i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2"> <i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Лозовой Антон</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/sp2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Троицкий монастырь</a>
+										</h2>
+										<p>
+											В описи Мурома 1624 г. напротив Благовещенского монастыря отмечена деревянная шатровая церковь Живоначальной Троицы. В 1642-1643 гг. на месте этого деревянного...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Мищенко Александра</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Онищенко Виктория</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/sp2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Добронин Виктор</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+						<div class="flr right-cv hidden-sm hidden-md hidden-lg">
+							<a href="#">Все истории</a>
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="foot-menu fll">
+					<div class="cont-area">
+						<a href="#">Контакты</a>
+						<a href="#">Вопросы и ответы</a>
+						<a href="#">Политики</a>
+					</div>
+					<p class="hidden-xs">© 1998-2016, Муромский историко-художественный музей
+					
+					</p>	<a href="http://bel-kot.com" target="_blank" class="hdlk">"Создание сайта - Белый Кот"</a>
+				</div>
+
+				<div class="foot-menu flr">
+					<img src="img/plogo.png">
+					<img src="img/slogo.png"></div>
+				<p class="hidden-sm hidden-md hidden-lg">© 1998-2016, Муромский историко-художественный музей</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- инициализация скриптов -->
+
+	<script src="js/scripts.js"></script>
+
+	<!-- инициализация скриптов -->
+	
+	
+	
+		<div class="modal fade" id="forgotPass" tabindex="-1" role="dialog" aria-labelledby="forgotPass" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3>Восстановление пароля
+</h3>
+
+					<form action="">
+						
+						<p>Введите E-mail, с помощью которого вы последний раз успешно входили на сайт.</p>
+<br>
+						<div class="sm-fr clearfix">
+							<div class="row n-form">
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<label for="">E-mail *</label>
+								</div>
+								<div class="col-md-8 col-sm-8 col-xs-12">
+									<input class="form-control"  type="text"></div>
+							</div>
+						</div>
+
+						<div class="sm-fr clearfix">
+							<button class="btn btns" data-toggle="modal" data-target="#sussModal">Восстановить</button>
+
+						</div>
+
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div class="modal fade" id="enterModal" tabindex="-1" role="dialog" aria-labelledby="enterModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3>Вход на сайт</h3>
+
+					<form action="">
+
+						<div class="sm-fr clearfix">
+							<div class="row n-form">
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<label for="">Эл. почта *</label>
+								</div>
+								<div class="col-md-8 col-sm-8 col-xs-12">
+									<input class="form-control"  type="text"></div>
+							</div>
+						</div>
+
+						<div class="sm-fr clearfix">
+							<div class="row n-form">
+								<div class="col-md-4 col-sm-4 col-xs-12">
+									<label for="">Пароль *</label>
+								</div>
+								<div class="col-md-8 col-sm-8 col-xs-12">
+									<input class="form-control" type="password"></div>
+							</div>
+						</div>
+
+						<div class="cl-na">
+							<label>
+								<input type="checkbox" checked />
+								Запомнить меня
+							</label>
+							<a href="#" class="pass-f" data-dismiss="modal" data-toggle="modal" data-target="#forgotPass">Забыли пароль?</a>
+						</div>
+
+						<div class="sm-fr clearfix">
+							<button class="btn btns" data-toggle="modal" data-target="#sussModal">Войти</button>
+
+						</div>
+
+						<div class="enter-soc">
+							<h4>
+								Войти
+ как пользователь:
+							</h4>
+
+							<div class="soc">
+								<a href="#" class="soc1"></a>
+								<a href="#" class="soc2"></a>
+								<a href="#" class="soc3"></a>
+								<a href="#" class="soc4"></a>
+								<a href="#" class="soc5"></a>
+							</div>
+
+						</div>
+
+						<div class="a-ls">
+							<p>
+								Регистрируясь, вы автоматически соглашаетесь
+								<br>
+								с
+								<a href="#">пользовательским соглашением</a>
+
+							</p>
+						</div>
+
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="regModal" aria-hidden="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h3>Регистрация</h3>
+					<div id="exTabNew">
+
+						<ul  class="nav nav-pills">
+							<li class="active">
+								<a  href="#s1c" data-toggle="tab">Частное лицо</a>
+							</li>
+							<li>
+								<a href="#s2c" data-toggle="tab">Организация</a>
+							</li>
+
+						</ul>
+
+						<div class="tab-content clearfix">
+							<div class="tab-pane active" id="s1c">
+
+								<form action="">
+									<div class="sm-fr clearfix">
+										<div class="row n-form">
+											<div class="col-md-4 col-sm-4 col-xs-12">
+												<label for="">Имя</label>
+											</div>
+											<div class="col-md-8 col-sm-8 col-xs-12">
+												<input class="form-control"  type="text"></div>
+										</div>
+									</div>
+
+									<div class="sm-fr clearfix">
+										<div class="row n-form">
+											<div class="col-md-4 col-sm-4 col-xs-12">
+												<label for="">Фамилия</label>
+											</div>
+											<div class="col-md-8 col-sm-8 col-xs-12">
+												<input class="form-control"  type="text"></div>
+										</div>
+									</div>
+
+									<div class="sm-fr clearfix">
+										<div class="row n-form">
+											<div class="col-md-4 col-sm-4 col-xs-12">
+												<label for="">Эл. почта *</label>
+											</div>
+											<div class="col-md-8 col-sm-8 col-xs-12">
+												<input class="form-control"  type="text"></div>
+										</div>
+									</div>
+
+									<div class="sm-fr clearfix">
+										<div class="row n-form">
+											<div class="col-md-4 col-sm-4 col-xs-12">
+												<label for="">Пароль *</label>
+											</div>
+											<div class="col-md-8 col-sm-8 col-xs-12">
+												<input class="form-control" type="password"></div>
+										</div>
+									</div>
+
+									<div class="cl-na">
+										<label>
+											<input type="checkbox" checked />
+											Хочу получать рассылку информационных материалов от сайта
+										</label>
+										<label>
+											<input type="checkbox" />
+											Соглашаюсь с
+											<a href="#">пользовательским соглашением</a>
+										</label>
+									</div>
+
+									<div class="sm-fr clearfix">
+										<button class="btn btns" data-toggle="modal" data-target="#sussModal">Зарегистрироваться</button>
+										<a class="reg-hr ghty" href="#"  data-dismiss="modal" data-toggle="modal" data-target="#enterModal">Войти</a>
+									</div>
+
+									<div class="enter-soc">
+										<h4>
+											Зарегистрироваться
+ как пользователь:
+										</h4>
+
+										<div class="soc">
+											<a href="#" class="soc1"></a>
+											<a href="#" class="soc2"></a>
+											<a href="#" class="soc3"></a>
+											<a href="#" class="soc4"></a>
+											<a href="#" class="soc5"></a>
+										</div>
+
+									</div>
+
+									<div class="a-ls">
+										<p>
+											Регистрируясь, вы автоматически соглашаетесь
+											<br>
+											с
+											<a href="#">пользовательским соглашением</a>
+
+										</p>
+									</div>
+
+								</form>
+
+							</div>
+							<div class="tab-pane" id="s2c">
+								<form action="">
+									<div class="sm-fr clearfix">
+										<div class="row n-form">
+											<div class="col-md-4 col-sm-4 col-xs-12">
+												<label for="">Название</label>
+											</div>
+											<div class="col-md-8 col-sm-8 col-xs-12">
+												<input class="form-control"  type="text"></div>
+										</div>
+									</div>
+
+									<div class="sm-fr clearfix">
+										<div class="row n-form">
+											<div class="col-md-4 col-sm-4 col-xs-12">
+												<label for="">Эл. почта *</label>
+											</div>
+											<div class="col-md-8 col-sm-8 col-xs-12">
+												<input class="form-control"  type="text"></div>
+										</div>
+									</div>
+
+									<div class="sm-fr clearfix">
+										<div class="row n-form">
+											<div class="col-md-4 col-sm-4 col-xs-12">
+												<label for="">Пароль *</label>
+											</div>
+											<div class="col-md-8 col-sm-8 col-xs-12">
+												<input class="form-control" type="password"></div>
+										</div>
+									</div>
+
+									<div class="cl-na">
+										<label>
+											<input type="checkbox" checked />
+											Хочу получать рассылку информационных материалов от сайта
+										</label>
+										<label>
+											<input type="checkbox" />
+											Соглашаюсь с
+											<a href="#">пользовательским соглашением</a>
+										</label>
+									</div>
+
+									<div class="sm-fr clearfix">
+										<button class="btn btns" data-toggle="modal" data-target="#sussModal">Зарегистрироваться</button>
+										<a class="reg-hr ghty" href="#"  data-dismiss="modal" data-toggle="modal" data-target="#enterModal">Войти</a>
+									</div>
+
+									<div class="enter-soc">
+										<h4>
+											Зарегистрироваться
+ как пользователь:
+										</h4>
+
+										<div class="soc">
+											<a href="#" class="soc1"></a>
+											<a href="#" class="soc2"></a>
+											<a href="#" class="soc3"></a>
+											<a href="#" class="soc4"></a>
+											<a href="#" class="soc5"></a>
+										</div>
+
+									</div>
+
+									<div class="a-ls">
+										<p>
+											Регистрируясь, вы автоматически соглашаетесь
+											<br>
+											с
+											<a href="#">пользовательским соглашением</a>
+
+										</p>
+									</div>
+								</form>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>

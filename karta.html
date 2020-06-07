@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<title>html</title>
+	<link href="plugins/fotorama/fotorama.css" rel="stylesheet">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="stylesheet" type="text/css" href="plugins/SlickSlider/slick/slick.css"/>
+	<link href="css/bundle.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="plugins/formstyler/jquery.formstyler.css" />
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="plugins/SlickSlider/slick/slick.js"></script>
+	<script src="plugins/formstyler/jquery.formstyler.js"></script>
+	<script src="plugins/fotorama/fotorama.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header>
+
+				<!-- mob menu -->
+				<div class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-md hidden-lg" >
+					<div class="container">
+						<div class="navbar-header">
+
+							<button type="button" class="navbar-toggle fll"  data-toggle="collapse" data-target="#responsive-menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<div class="reg-area">
+								<a href="#" data-toggle="modal" data-target="#enterModal">Вход</a>
+								<a class="activers" href="#" data-toggle="modal" data-target="#regModal">Регистрация</a>
+							</div>
+							<a href="#" data-toggle="modal" data-target="#regModal">
+								<div class="pluso-area"></div>
+							</a>
+
+						</div>
+						<div class="collapse navbar-collapse" id="responsive-menu">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">О проекте</a>
+								</li>
+								<li>
+									<a href="#">Истории</a>
+								</li>
+								<li>
+									<a href="#">Карта</a>
+								</li>
+								<li>
+									<a href="#">Участники</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- mob menu -->
+
+				<div class="top-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-2"></div>
+							<div class="col-lg-9 col-md-10">
+								<ul>
+									<li>
+										<a class="active" href="#">О проекте</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Карта</a>
+									</li>
+									<li>
+										<a href="#">Участники</a>
+									</li>
+								</ul>
+
+								<div class="reg-area">
+									<a href="#" data-toggle="modal" data-target="#enterModal">Вход</a>
+									<a class="activers" href="#" data-toggle="modal" data-target="#regModal">Регистрация</a>
+								</div>
+								<a href="#">
+									<div class="pluso-area" data-toggle="modal" data-target="#regModal"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-2 col-xs-3">
+								<a href="#">
+									<div class="logo"></div>
+								</a>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-9">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Поиск по сайту">
+									<span class="input-group-btn">
+										<button class="btn btn-secondary" type="button">.</button>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-5 hidden-xs">
+								<div class="history-area">
+									<h3>Расскажите свою историю!</h3>
+									<h4>Это увлекательно и просто!</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+	
+
+			<section class="mp">
+				<div id="map"></div>
+			</section>
+
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="foot-menu fll">
+					<div class="cont-area">
+						<a href="#">Контакты</a>
+						<a href="#">Вопросы и ответы</a>
+						<a href="#">Политики</a>
+					</div>
+					<p class="hidden-xs">© 1998-2016, Муромский историко-художественный музей</p>
+					<a href="http://bel-kot.com" target="_blank" class="hdlk">"Создание сайта - Белый Кот"</a>
+				</div>
+
+				<div class="foot-menu flr">
+					<img src="img/plogo.png">
+					<img src="img/slogo.png"></div>
+				<p class="hidden-sm hidden-md hidden-lg">© 1998-2016, Муромский историко-художественный музей</p>
+				
+			</div>
+		</footer>
+
+	</div>
+
+
+<script>
+	
+  
+
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+        center: [55.76, 37.64],
+        zoom: 10, controls: ['zoomControl']
+    }),
+
+
+        // Создаем геообъект с типом геометрии "Точка".
+        myGeoObject = new ymaps.GeoObject({
+            // Описание геометрии.
+            geometry: {
+                type: "Point",
+                coordinates: [55.8, 37.8]
+            },
+           
+        }, {
+            // Опции.
+            // Иконка метки будет растягиваться под размер ее содержимого.
+            preset: 'twirl#redStretchyIcon',
+           
+        }),
+
+    
+                myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                  balloonContent: '<div class="spl2"><h2><a href="#">Спасский монастырь. Спасо-Преображенский</a></h2><button class="savers">Сохранить</button></div>'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип проекта.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/maps.png',
+            // Размеры метки.
+            iconImageSize: [30, 30],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-27, -2]
+        });
+
+
+                 myPlacemark2 = new ymaps.Placemark([55.76, 37.78], {
+            // Свойства.
+            balloonContent: '<div class="spl2"><h2><a href="#">Спасский монастырь. Спасо-Преображенский</a></h2><button class="savers">Сохранить</button></div>'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/maps.png',
+               iconImageSize: [30, 30],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-27, -2]
+        });
+
+
+
+
+                 myPlacemark3 = new ymaps.Placemark([55.9198471, 37.7654985], {
+            // Свойства.
+            balloonContent: '<div class="spl2"><h2><a href="#">Спасский монастырь. Спасо-Преображенский</a></h2><button class="savers">Сохранить</button></div>'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/maps.png',
+               iconImageSize: [30, 30],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-27, -2]
+        });
+
+
+
+        
+myMap.behaviors.disable('scrollZoom');
+
+if($(window).width() < 768) {
+
+myMap.behaviors.disable('drag');
+
+
+} else { 
+    // change functionality for larger screens
+}
+
+    myMap.geoObjects.add(myPlacemark)
+        .add(myPlacemark2).add(myPlacemark3)}
+        
+
+</script>
+
+
+</body>
+</html>

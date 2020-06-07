@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<title>html</title>
+	<meta name="viewport" content="width=400">
+	<link rel="stylesheet" href="plugins/CustomScrollbarr/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="plugins/fotorama/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="plugins/SlickSlider/slick/slick.css"/>
+	<link href="css/bundle.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="plugins/formstyler/jquery.formstyler.css" />
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="plugins/SlickSlider/slick/slick.js"></script>
+	<script src="plugins/CustomScrollbarr/jquery.mCustomScrollbar.js"></script>
+	<script src="plugins/formstyler/jquery.formstyler.js"></script>
+	<script src="plugins/fotorama/fotorama.js"></script>
+	<script src="plugins/ckeditor/ckeditor.js"></script>
+	<script src="plugins/ckeditor/js/sample.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header>
+
+				<!-- mob menu -->
+				<div class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-md hidden-lg" >
+					<div class="container">
+						<div class="navbar-header">
+
+							<button type="button" class="navbar-toggle fll"  data-toggle="collapse" data-target="#responsive-menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a href="#" class="exit"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+							</a>
+							<div class="ava-img-area dropdown" data-toggle="dropdown">
+								<a href="#">
+									<div class="pluso-area"></div>
+								</a>
+								<img src="img/av1.png">
+								<span>Лозовский Антон</span>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Карта историй</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Фотогрфии</a>
+									</li>
+									<li>
+										<a href="#">Настройки</a>
+									</li>
+									<li class="divider"></li>
+
+									<div class="clear-btn">
+
+										<a href="#" class="btn btn-primary">Добавить историю</a>
+										<a href="#" class="btn btn-primary">Добавить фото</a>
+
+									</div>
+								</ul>
+
+							</div>
+
+						</div>
+						<div class="collapse navbar-collapse" id="responsive-menu">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">О проекте</a>
+								</li>
+								<li>
+									<a href="#">Истории</a>
+								</li>
+								<li>
+									<a href="#">Карта</a>
+								</li>
+								<li>
+									<a href="#">Участники</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- mob menu -->
+
+				<div class="top-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-2"></div>
+							<div class="col-lg-9 col-md-10">
+								<ul>
+									<li>
+										<a class="active" href="#">О проекте</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Карта</a>
+									</li>
+									<li>
+										<a href="#">Участники</a>
+									</li>
+								</ul>
+								<a href="#" class="exit"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+								</a>
+								<div class="ava-img-area dropdown" data-toggle="dropdown">
+									<a href="#">
+										<div class="pluso-area"></div>
+									</a>
+									<img src="img/av1.png">
+									<span>Лозовский Антон</span>
+
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Карта историй</a>
+										</li>
+										<li>
+											<a href="#">Истории</a>
+										</li>
+										<li>
+											<a href="#">Фотогрфии</a>
+										</li>
+										<li>
+											<a href="#">Настройки</a>
+										</li>
+										<li class="divider"></li>
+										<div class="clear-btn">
+											<a href="#" class="btn btn-primary">Добавить историю</a>
+											<a href="#" class="btn btn-primary">Добавить фото</a>
+										</div>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-2 col-xs-3">
+								<a href="#">
+									<div class="logo"></div>
+								</a>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-9">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Поиск по сайту">
+									<span class="input-group-btn">
+										<button class="btn btn-secondary" type="button">.</button>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-5 hidden-xs">
+								<div class="history-area">
+									<h3>Расскажите свою историю!</h3>
+									<h4>Это увлекательно и просто!</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="second-page-area"></div>
+
+			<div class="container">
+
+				<div class="bread-pagg">
+					<a href="#" class="home">Главная</a>
+					/
+					<a href="#" class="sec-pagg">Истории</a>
+					/
+					<span>Спасо - Преображенский монастырь</span>
+				</div>
+
+			</div>
+
+			<section class="title-main">
+				<div class="container">
+					<h2>Спасо-Преображенский монастырь</h2>
+					<span>1910 - 1920</span>
+				</div>
+			</section>
+
+			<section class="down-hishory">
+				<div class="container">
+					<div class="in-cont">
+						<div class="wl-left">
+							<div class="im-left">
+								<div class="img-wl">
+									<div class="fll">
+										<img src="img/avf.png" alt="">
+										<p>Марченко Ирина</p>
+									</div>
+									<div class="flr">
+										<span>01.03.2016   в 13:34</span>
+									</div>
+
+								</div>
+								<div class="photos-block">
+									<div class="nw33">
+										<p class="fp1">Фотографий</p>
+									</div>
+									<div class="nw33">
+										<p class="fp2">Отметок « нравится »</p>
+									</div>
+									<div class="nw33">
+										<p class="fp3">Комментариев</p>
+									</div>
+								</div>
+								<div class="buttons-h-block">
+									<button class="btn btns fll">Мне нравиться</button>
+									<button class="btn btns flr">Продолжить</button>
+								</div>
+								<div class="p-area scroller-z">
+									<p>
+										Спасо-Преображенский монастырь – один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было время распространения и укрепления на русской земле христианской веры. Возможно, здесь была укрепленная резиденция первого муромского князя Глеба.
+									</p>
+
+									<p>
+										В XVI столетии монастырь был центром духовной жизни города. Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено. Некоторые «памятники древности» попали в частные руки, некоторые ─ в коллекцию Муромского музея. В советское время на монастырской территории находилось военное училище, а затем воинская часть. В 1995 г. монастырь возвращен церкви, он активно реставрируется и обустраивается.
+									</p>
+
+									<p>
+										Рядом с собором стоит одноглавая Покровская церковь, построенная 
+в 1691 г. Здесь, в глубоком подклете, находится святыня обители и города Мурома ─ «гробница» легендарного воина-защитника Ильи Муромца с частицей его мощей. В 2006 г. они были перенесены из Киево-Печерской Лавры, где покоятся подлинные мощи святого Ильи из Мурома. У гробницы всегда много народа. Здесь можно поклониться богатырю, увидеть его «портрет», выполненный по научной реконструкции скульптора-антрополога С. Никитина, рассмотреть яркие настенные росписи, иллюстрирующие «житие» Ильи Муромца
+									</p>
+
+									<p>
+										Спасо-Преображенский монастырь – один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было время распространения и укрепления на русской земле христианской веры. Возможно, здесь была укрепленная резиденция первого муромского князя Глеба.
+									</p>
+
+									<p>
+										В XVI столетии монастырь был центром духовной жизни города. Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено. Некоторые «памятники древности» попали в частные руки, некоторые ─ в коллекцию Муромского музея. В советское время на монастырской территории находилось военное училище, а затем воинская часть. В 1995 г. монастырь возвращен церкви, он активно реставрируется и обустраивается.
+									</p>
+								</div>
+
+								<div class="tag-area">
+									<div class="fll"> <strong class="b-icon"></strong>
+										<p>
+											<span>Спасо-Преображенский монастырь</span>
+											<span>Муром</span>
+											<span>Муром</span>
+										</p>
+									</div>
+
+									<div class="flr">
+										<a class="dspl-n">добавить тег +</a>
+										<input class="hide-stn form-control colse">
+									</div>
+									
+									<script>
+										
+
+ $('.dspl-n').on('click', function () {
+                $('.hide-stn').toggleClass('shows-nt');
+            });
+    
+    
+									</script>
+								</div>
+								
+								<div class="clearfix"></div>
+								
+								
+								<div class="soc fll big-socl">
+									<a href="#" class="soc1"></a>
+									<a href="#" class="soc2"></a>
+									<a href="#" class="soc3"></a>
+									<a href="#" class="soc4"></a>
+									<a href="#" class="soc5"></a>
+								</div>
+
+<div class="clearfix"></div>
+
+								<div class="hr-tile">
+									<h3>Продолжение истории</h3>
+								</div>
+
+								<div class="before-arw">
+									<img src="img/rnd.png" alt="">
+									<input type="text" placeholder="Введите ваше продолжение истории...">
+									<div class="file_upload">
+										<input type="file"></div>
+									<button class="attach">Отправить</button>
+								</div>
+
+								<div class="comment-area">
+									<img src="img/rnd.png" class="gtm" alt="">
+									<div class="lv-area">
+										<h3>Марченко Ирина</h3>
+										<span class="timers">01.03.2016   в 13:34</span>
+										<p>
+											В XVI столетии монастырь был центром духовной жизни города. Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено.
+										</p>
+									</div>
+									<div class="clearfix"></div>
+
+									<div class="like-p fll">84</div>
+									<div class="flag-p flr"></div>
+								</div>
+
+								<div class="comment-area">
+									<img src="img/rnd.png" class="gtm" alt="">
+									<div class="lv-area">
+										<h3>Марченко Ирина</h3>
+										<span class="timers">01.03.2016   в 13:34</span>
+										<p>
+											В XVI столетии монастырь был центром духовной жизни города. Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено.
+										</p>
+									</div>
+									<div class="clearfix"></div>
+
+									<div class="like-p fll"></div>
+									<div class="flag-p flr"></div>
+								</div>
+
+								<div class="comment-area">
+									<img src="img/rnd.png" class="gtm" alt="">
+									<div class="lv-area">
+										<h3>Марченко Ирина</h3>
+										<span class="timers">01.03.2016   в 13:34</span>
+										<p>
+											В XVI столетии монастырь был центром духовной жизни города. Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено.
+										</p>
+
+										<div class="imgs-area">
+											<div class="iml">
+												<img class="img-responsive" src="img/mm.png" alt="">
+												<p>Муром pdf</p>
+											</div>
+											<div class="iml">
+												<img class="img-responsive" src="img/mm.png" alt="">
+												<p>Муром pdf</p>
+											</div>
+											<div class="iml">
+												<img class="img-responsive" src="img/mm.png" alt="">
+												<p>Муром pdf</p>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="clearfix"></div>
+
+									<div class="like-p fll">84</div>
+									<div class="flag-p flr"></div>
+								</div>
+
+								<ul class="pagination-area">
+
+									<li>
+										<a href="#">
+											<i class="fa fa-chevron-left" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">1</a>
+									</li>
+									<li class="active">
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a href="#">3</a>
+									</li>
+									<li>
+										<a href="#">4</a>
+									</li>
+									<li>
+										<a href="#">...</a>
+									</li>
+									<li>
+										<a href="#">23</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fa fa-chevron-right" aria-hidden="true"></i>
+										</a>
+									</li>
+
+								</ul>
+
+								<a href="#" class="button-area-a"> <strong>Рассказать свою историю</strong>
+								</a>
+
+								<div class="hr-tile">
+									<h3>Еще истории</h3>
+								</div>
+
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="prl-nt">
+											<a href="#">Троицкий монастырь</a>
+											<p>Некрасова Алина  12.09.16 в 13: 34</p>
+										</div>
+										<div class="prl-nt">
+											<a href="#">Троицкий монастырь</a>
+											<p>Некрасова Алина  12.09.16 в 13: 34</p>
+										</div>
+										<div class="prl-nt">
+											<a href="#">Троицкий монастырь</a>
+											<p>Некрасова Алина  12.09.16 в 13: 34</p>
+										</div>
+
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<div class="prl-nt">
+											<a href="#">Троицкий монастырь</a>
+											<p>Некрасова Алина  12.09.16 в 13: 34</p>
+										</div>
+										<div class="prl-nt">
+											<a href="#">Троицкий монастырь</a>
+											<p>Некрасова Алина  12.09.16 в 13: 34</p>
+										</div>
+										<div class="prl-nt">
+											<a href="#">Троицкий монастырь</a>
+											<p>Некрасова Алина  12.09.16 в 13: 34</p>
+										</div>
+									</div>
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="prl-nt">
+											<a href="#">Все истории</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="wl-right">
+
+							<section class="mp mp-small">
+								<div id="map"></div>
+							</section>
+
+							<div class="card-i">
+								<a href="#"  data-toggle="modal" data-target="#otdelnaya-istoriya">
+									<img src="img/cart-i.png"></a>
+								<a href="#" data-toggle="modal" data-target="#otdelnaya-istoriya">
+									<img src="img/cart-i2.png"></a>
+								<a href="#" data-toggle="modal" data-target="#otdelnaya-istoriya">
+									<img src="img/cart-i.png"></a>
+								<a href="#" data-toggle="modal" data-target="#otdelnaya-istoriya">
+									<img src="img/cart-i2.png"></a>
+								<a href="#" data-toggle="modal" data-target="#otdelnaya-istoriya">
+									<img src="img/cart-i.png"></a>
+								<a href="#" data-toggle="modal" data-target="#otdelnaya-istoriya">
+									<img src="img/cart-i2.png"></a>
+								<a href="#" data-toggle="modal" data-target="#otdelnaya-istoriya">
+									<img src="img/cart-i.png"></a>
+								<a href="#" data-toggle="modal" data-target="#otdelnaya-istoriya">
+									<img src="img/cart-i2.png"></a>
+								<a href="#" data-toggle="modal" data-target="#otdelnaya-istoriya">
+									<img src="img/cart-i.png"></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="modal fade" id="otdelnaya-istoriya" tabindex="-1" role="dialog" aria-labelledby="otdelnaya-istoriya" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-body">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<div class="left-m fll">
+								<h3>Фотографии истории</h3>
+								<div class="slider">
+									<div>
+										<img src="img/bg.jpg" alt="">
+										<div class="photo-nt">
+											
+											<div class="photos-block">
+
+									<div class="nw33">
+										<p class="fp2">Отметок « нравится »</p>
+									</div>
+									<div class="nw33">
+										<p class="fp3">Комментариев</p>
+									</div>
+								</div>
+
+								<div class="flk-area">
+									<p>Поделиться:</p>
+
+									<div class="soc">
+										<a href="#" class="soc1"></a>
+										<a href="#" class="soc2"></a>
+										<a href="#" class="soc3"></a>
+										<a href="#" class="soc4"></a>
+										<a href="#" class="soc5"></a>
+									</div>
+								</div>
+											
+											
+											<div class="photo-i">
+												<div class="wl1">Фотограф:</div>
+												<div class="wl2">Марченко Олег Николаевич</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Название:</div>
+												<div class="wl2">Спасо-Преображенский монастырь</div>
+											</div>
+										
+											<div class="photo-i">
+												<div class="wl1">Место съемки:</div>
+												<div class="wl2">ул. Лакина, 1, Муром, Владимирская обл., Россия, 60226</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Дата:</div>
+												<div class="wl2">12.09.16</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Теги:</div>
+												<div class="wl2">Спасо-Преображенский монастырь, Муром</div>
+											</div>
+
+										</div>
+									</div>
+									<div>
+										<img src="img/bg.jpg" alt="">
+										<div class="photo-nt">
+											
+											<div class="photos-block">
+
+									<div class="nw33">
+										<p class="fp2">Отметок « нравится »</p>
+									</div>
+									<div class="nw33">
+										<p class="fp3">Комментариев</p>
+									</div>
+								</div>
+
+								<div class="flk-area">
+									<p>Поделиться:</p>
+
+									<div class="soc">
+										<a href="#" class="soc1"></a>
+										<a href="#" class="soc2"></a>
+										<a href="#" class="soc3"></a>
+										<a href="#" class="soc4"></a>
+										<a href="#" class="soc5"></a>
+									</div>
+								</div>
+											
+											
+											<div class="photo-i">
+												<div class="wl1">Фотограф:</div>
+												<div class="wl2">Марченко Олег Николаевич</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Название:</div>
+												<div class="wl2">Спасо-Преображенский монастырь</div>
+											</div>
+										
+											<div class="photo-i">
+												<div class="wl1">Место съемки:</div>
+												<div class="wl2">ул. Лакина, 1, Муром, Владимирская обл., Россия, 60226</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Дата:</div>
+												<div class="wl2">12.09.16</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Теги:</div>
+												<div class="wl2">Спасо-Преображенский монастырь, Муром</div>
+											</div>
+
+										</div>
+									</div>
+									<div>
+										<img src="img/bg.jpg" alt="">
+										<div class="photo-nt">
+											
+											<div class="photos-block">
+
+									<div class="nw33">
+										<p class="fp2">Отметок « нравится »</p>
+									</div>
+									<div class="nw33">
+										<p class="fp3">Комментариев</p>
+									</div>
+								</div>
+
+								<div class="flk-area">
+									<p>Поделиться:</p>
+
+									<div class="soc">
+										<a href="#" class="soc1"></a>
+										<a href="#" class="soc2"></a>
+										<a href="#" class="soc3"></a>
+										<a href="#" class="soc4"></a>
+										<a href="#" class="soc5"></a>
+									</div>
+								</div>
+											
+											
+											<div class="photo-i">
+												<div class="wl1">Фотограф:</div>
+												<div class="wl2">Марченко Олег Николаевич</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Название:</div>
+												<div class="wl2">Спасо-Преображенский монастырь</div>
+											</div>
+										
+											<div class="photo-i">
+												<div class="wl1">Место съемки:</div>
+												<div class="wl2">ул. Лакина, 1, Муром, Владимирская обл., Россия, 60226</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Дата:</div>
+												<div class="wl2">12.09.16</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Теги:</div>
+												<div class="wl2">Спасо-Преображенский монастырь, Муром</div>
+											</div>
+
+										</div>
+									</div>
+									<div>
+										<img src="img/bg.jpg" alt="">
+										<div class="photo-nt">
+											
+											<div class="photos-block">
+
+									<div class="nw33">
+										<p class="fp2">Отметок « нравится »</p>
+									</div>
+									<div class="nw33">
+										<p class="fp3">Комментариев</p>
+									</div>
+								</div>
+
+								<div class="flk-area">
+									<p>Поделиться:</p>
+
+									<div class="soc">
+										<a href="#" class="soc1"></a>
+										<a href="#" class="soc2"></a>
+										<a href="#" class="soc3"></a>
+										<a href="#" class="soc4"></a>
+										<a href="#" class="soc5"></a>
+									</div>
+								</div>
+											
+											
+											<div class="photo-i">
+												<div class="wl1">Фотограф:</div>
+												<div class="wl2">Марченко Олег Николаевич</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Название:</div>
+												<div class="wl2">Спасо-Преображенский монастырь</div>
+											</div>
+										
+											<div class="photo-i">
+												<div class="wl1">Место съемки:</div>
+												<div class="wl2">ул. Лакина, 1, Муром, Владимирская обл., Россия, 60226</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Дата:</div>
+												<div class="wl2">12.09.16</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Теги:</div>
+												<div class="wl2">Спасо-Преображенский монастырь, Муром</div>
+											</div>
+
+										</div>
+									</div>
+									<div>
+										<img src="img/bg.jpg" alt="">
+										<div class="photo-nt">
+											
+											<div class="photos-block">
+
+									<div class="nw33">
+										<p class="fp2">Отметок « нравится »</p>
+									</div>
+									<div class="nw33">
+										<p class="fp3">Комментариев</p>
+									</div>
+								</div>
+
+								<div class="flk-area">
+									<p>Поделиться:</p>
+
+									<div class="soc">
+										<a href="#" class="soc1"></a>
+										<a href="#" class="soc2"></a>
+										<a href="#" class="soc3"></a>
+										<a href="#" class="soc4"></a>
+										<a href="#" class="soc5"></a>
+									</div>
+								</div>
+											
+											
+											<div class="photo-i">
+												<div class="wl1">Фотограф:</div>
+												<div class="wl2">Марченко Олег Николаевич</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Название:</div>
+												<div class="wl2">Спасо-Преображенский монастырь</div>
+											</div>
+										
+											<div class="photo-i">
+												<div class="wl1">Место съемки:</div>
+												<div class="wl2">ул. Лакина, 1, Муром, Владимирская обл., Россия, 60226</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Дата:</div>
+												<div class="wl2">12.09.16</div>
+											</div>
+											<div class="photo-i">
+												<div class="wl1">Теги:</div>
+												<div class="wl2">Спасо-Преображенский монастырь, Муром</div>
+											</div>
+
+										</div>
+									</div>								</div>
+
+								<button class="go">Prev</button>
+
+								<button class="pause">Play/Pause the Slider</button>
+
+								<button class="go2">Next</button>
+
+							</div>
+							<div class="right-m flr">
+
+								<div class="revs-area">
+									<h3>Описание:</h3>
+									<p>В XVI столетии монастырь был центром духовной жизни города. <span class="hide-xss">Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено.</span>
+										<strong class="dll">Читать далее</strong>
+										
+										<div class="buttons-h-block small-nra">
+									<button class="btn btns fll">Мне нравиться</button>
+								</div>
+</p>
+								</div>
+
+								<div class="scroll-comment scroller-z">
+
+									<div class="comment-area">
+										<img src="img/rnd.png" class="gtm" alt="">
+										<div class="lv-area">
+											<h3>Марченко Ирина</h3>
+											<span class="timers">01.03.2016   в 13:34</span>
+											<p>
+												В XVI столетии монастырь был центром духовной жизни города. Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено.
+											</p>
+										</div>
+										<div class="clearfix"></div>
+
+										<div class="like-p fll"></div>
+										<div class="flag-p flr"></div>
+									</div>
+
+									<div class="comment-area">
+										<img src="img/rnd.png" class="gtm" alt="">
+										<div class="lv-area">
+											<h3>Марченко Ирина</h3>
+											<span class="timers">01.03.2016   в 13:34</span>
+											<p>
+												В XVI столетии монастырь был центром духовной жизни города. Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено.
+											</p>
+										</div>
+										<div class="clearfix"></div>
+
+										<div class="like-p fll"></div>
+										<div class="flag-p flr"></div>
+									</div>
+
+									<div class="comment-area">
+										<img src="img/rnd.png" class="gtm" alt="">
+										<div class="lv-area">
+											<h3>Марченко Ирина</h3>
+											<span class="timers">01.03.2016   в 13:34</span>
+											<p>
+												В XVI столетии монастырь был центром духовной жизни города. Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено.
+											</p>
+										</div>
+										<div class="clearfix"></div>
+
+									</div>
+
+									<div class="comment-area">
+										<img src="img/rnd.png" class="gtm" alt="">
+										<div class="lv-area">
+											<h3>Марченко Ирина</h3>
+											<span class="timers">01.03.2016   в 13:34</span>
+											<p>
+												В XVI столетии монастырь был центром духовной жизни города. Стены храмов украшали иконы лучших «богомазов» грозненского времени. Здесь была богатая библиотека, хранился архив духовного ведомства. К сожалению, в результате событий «Смутного Времени» и революций многое утрачено.
+											</p>
+										</div>
+										<div class="clearfix"></div>
+
+										<div class="like-p fll">18</div>
+
+									</div>
+
+								</div>
+
+								<div class="before-arw">
+									<img src="img/rnd.png" alt="">
+									<input type="text" placeholder="Написать комментарий...">
+									<div class="file_upload">
+										<input type="file"></div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="foot-menu fll">
+					<div class="cont-area">
+						<a href="#">Контакты</a>
+						<a href="#">Вопросы и ответы</a>
+						<a href="#">Политики</a>
+					</div>
+					<p class="hidden-xs">© 1998-2016, Муромский историко-художественный музей</p>
+						<a href="http://bel-kot.com" target="_blank" class="hdlk">"Создание сайта - Белый Кот"</a>
+				</div>
+
+				<div class="foot-menu flr">
+					<img src="img/plogo.png">
+					<img src="img/slogo.png"></div>
+				<p class="hidden-sm hidden-md hidden-lg">© 1998-2016, Муромский историко-художественный музей</p>
+			
+			</div>
+		</footer>
+
+		<!-- инициализация скриптов -->
+
+		<script src="js/scripts.js"></script>
+
+		<script>
+				 
+ 	if($(window).width() > 768) {
+
+
+$(".scroller-z").mCustomScrollbar({
+					axis:"y",			
+					autoDraggerLength:false,
+				
+				});	
+
+
+} else { 
+    // change functionality for larger screens
+}
+	
+			</script>
+
+		<!-- инициализация скриптов -->
+	</div>
+
+</body>
+</html>

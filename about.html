@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<title>html</title>
+	<meta name="viewport" content="width=400">
+	<link rel="stylesheet" href="plugins/CustomScrollbarr/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="plugins/fotorama/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="plugins/SlickSlider/slick/slick.css"/>
+	<link href="css/bundle.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="plugins/formstyler/jquery.formstyler.css" />
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="plugins/SlickSlider/slick/slick.js"></script>
+	<script src="plugins/CustomScrollbarr/jquery.mCustomScrollbar.js"></script>
+	<script src="plugins/formstyler/jquery.formstyler.js"></script>
+	<script src="plugins/fotorama/fotorama.js"></script>
+	<script src="plugins/ckeditor/ckeditor.js"></script>
+	<script src="plugins/ckeditor/js/sample.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header>
+
+				<!-- mob menu -->
+				<div class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-md hidden-lg" >
+					<div class="container">
+						<div class="navbar-header">
+
+							<button type="button" class="navbar-toggle fll"  data-toggle="collapse" data-target="#responsive-menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a href="#" class="exit"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+							</a>
+							<div class="ava-img-area dropdown" data-toggle="dropdown">
+								<a href="#">
+									<div class="pluso-area"></div>
+								</a>
+								<img src="img/av1.png">
+								<span>Лозовский Антон</span>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Карта историй</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Фотогрфии</a>
+									</li>
+									<li>
+										<a href="#">Настройки</a>
+									</li>
+									<li class="divider"></li>
+
+									<div class="clear-btn">
+
+										<a href="#" class="btn btn-primary">Добавить историю</a>
+										<a href="#" class="btn btn-primary">Добавить фото</a>
+
+									</div>
+								</ul>
+
+							</div>
+
+						</div>
+						<div class="collapse navbar-collapse" id="responsive-menu">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">О проекте</a>
+								</li>
+								<li>
+									<a href="#">Истории</a>
+								</li>
+								<li>
+									<a href="#">Карта</a>
+								</li>
+								<li>
+									<a href="#">Участники</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- mob menu -->
+
+				<div class="top-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-2"></div>
+							<div class="col-lg-9 col-md-10">
+								<ul>
+									<li>
+										<a class="active" href="#">О проекте</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Карта</a>
+									</li>
+									<li>
+										<a href="#">Участники</a>
+									</li>
+								</ul>
+								<a href="#" class="exit"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+								</a>
+								<div class="ava-img-area dropdown" data-toggle="dropdown">
+									<a href="#">
+										<div class="pluso-area"></div>
+									</a>
+									<img src="img/av1.png">
+									<span>Лозовский Антон</span>
+
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Карта историй</a>
+										</li>
+										<li>
+											<a href="#">Истории</a>
+										</li>
+										<li>
+											<a href="#">Фотогрфии</a>
+										</li>
+										<li>
+											<a href="#">Настройки</a>
+										</li>
+										<li class="divider"></li>
+										<div class="clear-btn">
+											<a href="#" class="btn btn-primary">Добавить историю</a>
+											<a href="#" class="btn btn-primary">Добавить фото</a>
+										</div>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-2 col-xs-3">
+								<a href="#">
+									<div class="logo"></div>
+								</a>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-9">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Поиск по сайту">
+									<span class="input-group-btn">
+										<button class="btn btn-secondary" type="button">.</button>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-5 hidden-xs">
+								<div class="history-area">
+									<h3>Расскажите свою историю!</h3>
+									<h4>Это увлекательно и просто!</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<section class="main-block-adress user-table faq">
+				<div class="container">
+					<div class="left-area-faq">
+						<div class="bread-pagg">
+							<a href="#" class="home">Главная</a>
+							/
+							<span>Вопросы и ответы</span>
+						</div>
+
+						<div class="ul-area-menu">
+							<ul>
+								<li class="active">
+									<a class="ab1" href="#">О проекте</a>
+								</li>
+								<li>
+									<a class="ab2" href="#">Контакты</a>
+								</li>
+								<li>
+									<a class="ab3" href="#">Вопросы и ответы</a>
+								</li>
+								<li>
+									<a class="ab4" href="#">Политики</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="right-area-faq">
+						<div class="bg-main-area">
+							<h3>Вопросы и ответы</h3>
+							<h4>
+								«Виртуальная история» - это историко-культурный инновационный проект
+							</h4>
+						</div>
+						<div class="txt">
+							<h4>
+								Компания МТС совместно с Муромским историко-художественным музеем представляют историко-культурный инновационный проект «Виртуальная история».
+							</h4>
+
+							<p>
+								«Виртуальная история» - это историко-культурный инновационный проект МТС на основе технологии «дополненной реальности», позволяющей отображать на экране смартфона или планшета облик городов в исторической ретроспективе.
+							</p>
+
+							<p>
+								На сайте музея с помощью карт Google Maps, к которым «приколоты» фотографии и описания достопримечательностей, можно увидеть Муром начала ХХ века. Представленные в проекте фотографии происходят из личных коллекций двух «отцов-основателей» Муромского музея - краеведа Николая Гавриловича Добрынкина и городского головы Ивана Петровича Мяздрикова. В фондах музея сохранилось более ста видов города Мурома их авторства конца XIX - начала ХХ века.
+							</p>
+						</div>
+
+						<div class="fotorama" data-max-width="100%" data-nav="thumbs" data-thumbwidth="190" data-thumbheight="120" data-maxheight="700">
+							<a href="http://youtube.com/watch?v=C3lWwBslWqg">
+								<img class="img-responsive"  src="img/bg.jpg"></a>
+							<img class="img-responsive"  src="img/bg.jpg">
+							<img class="img-responsive"  src="img/bg.jpg">
+							<img class="img-responsive"  src="img/bg.jpg">
+							<img class="img-responsive"   src="img/bg.jpg">
+							<img class="img-responsive"  src="img/bg.jpg">
+							<img class="img-responsive"  src="img/bg.jpg">
+							<img class="img-responsive"   src="img/bg.jpg">
+							<img class="img-responsive"   src="img/bg.jpg"></div>
+
+						<div class="team-area">
+							<h3>Команда</h3>
+						</div>
+
+						<div class="card-team">
+							<div class="l-card card-gn">
+								<img src="img/ava-table2.png">
+								<div class="team-right">
+									<h2>Разумовская Анастасия Александровна</h2>
+									<p>Заведующая выставочным отделением</p>
+									<div class="contacts-team">
+										<p>(49234)3-35-47 - рабочий;</p>
+										<p>8-910-170-86-75</p>
+										<a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+									</div>
+								</div>
+							</div>
+							<div class="r-card card-gn">
+								<img src="img/ava-table2.png">
+								<div class="team-right">
+									<h2>Разумовская Анастасия Александровна</h2>
+									<p>Заведующая выставочным отделением</p>
+									<div class="contacts-team">
+										<p>(49234)3-35-47 - рабочий;</p>
+										<p>8-910-170-86-75</p>
+										<a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="l-card card-gn">
+								<img src="img/ava-table2.png">
+								<div class="team-right">
+									<h2>Разумовская Анастасия Александровна</h2>
+									<p>Заведующая выставочным отделением</p>
+									<div class="contacts-team">
+										<p>(49234)3-35-47 - рабочий;</p>
+										<p>8-910-170-86-75</p>
+										<a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+									</div>
+								</div>
+							</div>
+							<div class="r-card card-gn">
+								<img src="img/ava-table2.png">
+								<div class="team-right">
+									<h2>Разумовская Анастасия Александровна</h2>
+									<p>Заведующая выставочным отделением</p>
+									<div class="contacts-team">
+										<p>(49234)3-35-47 - рабочий;</p>
+										<p>8-910-170-86-75</p>
+										<a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="l-card card-gn">
+								<img src="img/ava-table2.png">
+								<div class="team-right">
+									<h2>Разумовская Анастасия Александровна</h2>
+									<p>Заведующая выставочным отделением</p>
+									<div class="contacts-team">
+										<p>(49234)3-35-47 - рабочий;</p>
+										<p>8-910-170-86-75</p>
+										<a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+									</div>
+								</div>
+							</div>
+							<div class="r-card card-gn">
+								<img src="img/ava-table2.png">
+								<div class="team-right">
+									<h2>Разумовская Анастасия Александровна</h2>
+									<p>Заведующая выставочным отделением</p>
+									<div class="contacts-team">
+										<p>(49234)3-35-47 - рабочий;</p>
+										<p>8-910-170-86-75</p>
+										<a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="button-team">
+
+								<a href="#" class="button-area-a"> <strong>Показать еще 23 сотрудника</strong>
+								</a>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="foot-menu fll">
+					<div class="cont-area">
+						<a href="#">Контакты</a>
+						<a href="#">Вопросы и ответы</a>
+						<a href="#">Политики</a>
+					</div>
+					<p class="hidden-xs">© 1998-2016, Муромский историко-художественный музей</p>
+					<a href="http://bel-kot.com" target="_blank" class="hdlk">"Создание сайта - Белый Кот"</a>
+				</div>
+
+				<div class="foot-menu flr">
+					<img src="img/plogo.png">
+					<img src="img/slogo.png"></div>
+				<p class="hidden-sm hidden-md hidden-lg">© 1998-2016, Муромский историко-художественный музей</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModal" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Регистрация прошла успешно</h4>
+				</div>
+				<div class="modal-body">
+
+					<div class="slider">
+						<div>Hover me and I'll pause</div>
+						<div>Unhover and I'll resume</div>
+						<div>But not if you've paused me</div>
+						<div>I wont restart when changing slides</div>
+						<div>I will also pause when focussed</div>
+						<div>Huzzah.</div>
+					</div>
+
+					<button class="go">Prev</button>
+
+					<button class="pause">Play/Pause the Slider</button>
+
+					<button class="go2">Next</button>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- инициализация скриптов -->
+
+	<script src="js/scripts.js"></script>
+
+	<script>
+				 
+ 	if($(window).width() > 768) {
+
+
+$(".scroller-b").mCustomScrollbar({
+					axis:"y",			
+					autoDraggerLength:false,
+				
+				});	
+
+
+} else { 
+    // change functionality for larger screens
+}
+	
+			</script>
+
+	<!-- инициализация скриптов -->
+
+</body>
+</html>

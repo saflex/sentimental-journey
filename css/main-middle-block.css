@@ -1,0 +1,231 @@
+.main-middle-block {
+    background: url(../img/main-middle-bg.png) 0 0 repeat;
+    background-size: initial !important;
+}
+
+.right-cv a{
+	text-decoration: underline;
+	font-size: 18px;
+	color: #283747;
+	font-family: 'Noto Serif', serif;
+	font-weight: 600;
+}
+
+.right-cv a:hover{
+	text-decoration: none;
+}
+
+.left-cv{
+	font-size: 24px;
+		color: #283747;
+	font-family: 'Noto Serif', serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 65px;
+}
+
+.left-cv:before {
+    position: absolute;
+    content: '';
+    width: 46px;
+    height: 46px;
+    background: url(../img/pl.png) 0 0 no-repeat;
+    margin-left: -65px;
+    margin-top: -10px;
+}
+
+.hst-area {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    clear: both;
+    overflow: hidden;
+}
+
+.nb-spas {
+    background: #fff;
+    -webkit-box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.32);
+-moz-box-shadow:    0px 1px 14px 0px rgba(50, 50, 50, 0.32);
+box-shadow:         0px 1px 14px 0px rgba(50, 50, 50, 0.32);
+}
+
+.nb-spas .s1 {
+    padding: 5px 10px;
+}
+
+.nb-spas .lon-area {
+    border-bottom: 5px solid #435567;
+}
+
+.nb-spas p {
+    font-size: 13px;
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+.nb-spas .sp-down h2 {
+    margin-top: 8px;
+}
+
+.nb-spas .lon-area span {
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 160px;
+    white-space: nowrap;
+    padding-left: 2px;
+}
+.nb-spas .s1 span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 3px;
+    font-size: 11px;
+    margin-top: -8px;
+}
+
+.nb-spask .s1 img {
+    margin-top: 1px;
+}
+
+
+.nb-spas .oblt {
+    position: absolute;
+    background: #fff;
+    padding: 8px 7px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 9px;
+    font-size: 11px;
+    font-weight: 700;
+    right: 12px;
+}
+
+.nb-spas .lon-area:before {
+    border: 12px solid transparent;
+    border-bottom: 12px solid #304457;
+    content: '';
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+section.main-middle-block {
+    padding-bottom: 50px;
+    background-size: contain;
+}
+
+
+.sp-down h2 {
+    font-size: 15px;
+    margin: 0;
+    padding-bottom: 7px;
+    max-height: 41px;
+    overflow: hidden;
+}
+
+.nb-spas .sp-down {
+    height: 146px;
+    overflow: hidden;
+}
+.nb-spas .sp-down p {
+    padding-top: 5px;
+}
+
+.nb-spas .s1 img {
+    margin-top: 1px;
+    padding-right: 3px;
+}
+
+.lon-area img {
+    display: inline-block;
+}
+
+.sp-down p{
+	 padding-top: 5px;
+}
+
+button.btn.btn-secondary:hover{
+	background: #304457;
+}
+
+ul.slick-dots{
+	display: none !important;
+}
+
+.sp1{
+	position: relative;
+}
+
+.oblt{
+	z-index: 2;
+}
+.fll.soc-area{
+	z-index: 2;
+}
+
+.sp1>img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.nb-spas:hover{
+	-webkit-box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.62);
+    -moz-box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.62);
+    box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.62);
+}
+
+.ymaps-2-1-42-balloon__close+.ymaps-2-1-42-balloon__content>ymaps:hover{
+	-webkit-box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.62);
+    -moz-box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.62);
+    box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.62);
+}
+
+.show-content{
+	display: none;
+}
+
+.nb-spas:hover .show-content {
+    display: block;
+    z-index: 99;
+    position: absolute;
+    left: 12px;
+    margin-top: 10px;
+}
+
+.ymaps-2-1-42-balloon__close+.ymaps-2-1-42-balloon__content>ymaps:hover .show-content {
+    display: block;
+    z-index: 99;
+    position: absolute;
+    right: 1px;
+    margin-top: 12px;
+}
+
+.ymaps-2-1-42-balloon__close+.ymaps-2-1-42-balloon__content>ymaps .oblt {
+    padding: 3px 7px;
+}
+
+.scrt{
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	border-radius: 4px;
+}
+
+.scrt i {
+    color: #314559;
+    padding-top: 4px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}

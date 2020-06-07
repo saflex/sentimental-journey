@@ -1,0 +1,166 @@
+section.main-block-bottom {
+    margin-top: -100px;
+}
+
+.trigger-area strong {
+    color: #314559;
+    font-size: 65px;
+    font-family: 'AlexandraZeferinoOne';
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.trigger-area span {
+    color: #314559;
+    font-size: 15px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 5px;
+    line-height: 1.2em;
+    padding-left: 10px;
+}
+
+.trigger-area span:before {
+    content: '';
+    position: absolute;
+    height: 43px;
+    width: 1px;
+    background: #dadada;
+    margin-left: -25px;
+}
+
+.trigger-area {
+    background: #f8f8f8;
+    border-top: 5px solid #314559;
+    height: 100px;
+    padding: 26px;
+}
+
+
+
+.main-block-adress {
+    background: url(../img/bg-b.png) 0 0 repeat;
+    width: 100%;
+    background-size: inherit;
+}
+
+.adress-area {
+    padding: 30px;
+    background: #fcfcfc;
+}
+
+
+.gds-nl input {
+    width: 65px;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px !important;
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+    color: #757575;
+    padding-left: 14px;
+    height: 38px;
+}
+
+.gds-nl strong {
+    margin-right: 25px;
+    font-family: 'Noto Serif', serif;
+    color: #283747;
+    font-weight: 600;
+}
+
+.adress-area .input-group input {
+    height: 58px;
+    -webkit-box-shadow: inset 2px 2px 6px 0px rgba(50, 50, 50, 0.12);
+    -moz-box-shadow: inset 2px 2px 6px 0px rgba(50, 50, 50, 0.12);
+    box-shadow: inset 2px 2px 6px 0px rgba(50, 50, 50, 0.12);
+    border: 1px solid #eee;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 19px;
+}
+
+.adress-area .input-group input:focus{
+-webkit-box-shadow: inset 2px 2px 6px 0px rgba(50, 50, 50, 0.12) !important;
+-moz-box-shadow:    inset 2px 2px 6px 0px rgba(50, 50, 50, 0.12) !important;
+box-shadow:         inset 2px 2px 6px 0px rgba(50, 50, 50, 0.12) !important;
+border: 1px solid #5d4436;
+}
+
+.adress-area .input-group button:before{
+	display: none;
+}
+.adress-area .input-group button {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+    text-transform: uppercase;
+    height: 58px;
+    padding-left: 33px;
+    width: 180px;
+}
+	
+
+.gds-nl {
+	float: right;
+}
+
+.history-nl{
+ font-family: 'Noto Serif', serif;
+ font-size: 24px;
+ color: #283747;
+ padding-left: 50px;
+ font-weight: 600;	
+}
+
+.history-nl:before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 25px;
+    background: url(../img/dot.png) 0 0 no-repeat;
+    margin-left: -47px;
+    margin-top: 1px;
+}
+
+.gds-nl span {
+    margin-left: 12px;
+}
+
+.adress-area .input-group {
+    margin-top: 25px !important;
+    margin-bottom: 6px !important;
+}
+
+.adress-area .input-group  ::-webkit-input-placeholder {color:#2c3d4f;}
+.adress-area .input-group  ::-moz-placeholder          {color:#2c3d4f;}/* Firefox 19+ */
+.adress-area .input-group  :-moz-placeholder           {color:#2c3d4f;}/* Firefox 18- */
+.adress-area .input-group  :-ms-input-placeholder      {color:#2c3d4f;}
+
+
+section.mp:before{
+	position: absolute;
+	content: '';
+	background: url(../img/shadow-xp.png) 0 0 repeat-x;
+	width: 100%;
+	height: 15px;
+	z-index: 9;
+	top: 0;
+}
+
+section.mp:after{
+	position: absolute;
+	content: '';
+	background: url(../img/shadow-xp2.png) 0 0 repeat-x;
+	width: 100%;
+	height: 15px;
+	z-index: 9;
+	bottom: 0;
+}
+
+section.mp {
+    position: relative;
+}
+

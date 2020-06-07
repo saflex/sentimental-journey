@@ -1,0 +1,16 @@
+/* Блоки и секции */
+@import "bootstrap.css";
+@import "header.css";
+@import "section-main.css";
+@import "main-block-bottom.css";
+@import "main-middle-block.css";
+@import "section-maps.css";
+@import "footer.css";
+/* Общие стили */
+@import "reset.css";
+@import "style.css";
+@import "media.css";
+/* Стили для шрифтов */
+@import "../fonts/AlexandraZeferinoOne/stylesheets.css";
+@import "../fonts/NotoSerif/stylesheets.css";
+@import "../fonts/OpenSans/stylesheets.css";

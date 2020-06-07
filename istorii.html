@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<title>html</title>
+	<meta name="viewport" content="width=400">
+	<link rel="stylesheet" href="plugins/CustomScrollbarr/jquery.mCustomScrollbar.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+	<link href="plugins/fotorama/fotorama.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="plugins/SlickSlider/slick/slick.css"/>
+	<link href="css/bundle.css" rel="stylesheet" media="screen">
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="plugins/formstyler/jquery.formstyler.css" />
+	<script src="plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="plugins/SlickSlider/slick/slick.js"></script>
+	<script src="plugins/CustomScrollbarr/jquery.mCustomScrollbar.js"></script>
+	<script src="plugins/formstyler/jquery.formstyler.js"></script>
+	<script src="plugins/fotorama/fotorama.js"></script>
+	<script src="plugins/ckeditor/ckeditor.js"></script>
+	<script src="plugins/ckeditor/js/sample.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<header>
+
+				<!-- mob menu -->
+				<div class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-md hidden-lg" >
+					<div class="container">
+						<div class="navbar-header">
+
+							<button type="button" class="navbar-toggle fll"  data-toggle="collapse" data-target="#responsive-menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a href="#" class="exit"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+							</a>
+							<div class="ava-img-area dropdown" data-toggle="dropdown">
+								<a href="#">
+									<div class="pluso-area"></div>
+								</a>
+								<img src="img/av1.png">
+								<span>Лозовский Антон</span>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Карта историй</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Фотогрфии</a>
+									</li>
+									<li>
+										<a href="#">Настройки</a>
+									</li>
+									<li class="divider"></li>
+
+									<div class="clear-btn">
+
+										<a href="#" class="btn btn-primary">Добавить историю</a>
+										<a href="#" class="btn btn-primary">Добавить фото</a>
+
+									</div>
+								</ul>
+
+							</div>
+
+						</div>
+						<div class="collapse navbar-collapse" id="responsive-menu">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="#">О проекте</a>
+								</li>
+								<li>
+									<a href="#">Истории</a>
+								</li>
+								<li>
+									<a href="#">Карта</a>
+								</li>
+								<li>
+									<a href="#">Участники</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- mob menu -->
+
+				<div class="top-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-2"></div>
+							<div class="col-lg-9 col-md-10">
+								<ul>
+									<li>
+										<a class="active" href="#">О проекте</a>
+									</li>
+									<li>
+										<a href="#">Истории</a>
+									</li>
+									<li>
+										<a href="#">Карта</a>
+									</li>
+									<li>
+										<a href="#">Участники</a>
+									</li>
+								</ul>
+								<a href="#" class="exit"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+								</a>
+								<div class="ava-img-area dropdown" data-toggle="dropdown">
+									<a href="#">
+										<div class="pluso-area"></div>
+									</a>
+									<img src="img/av1.png">
+									<span>Лозовский Антон</span>
+
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Карта историй</a>
+										</li>
+										<li>
+											<a href="#">Истории</a>
+										</li>
+										<li>
+											<a href="#">Фотогрфии</a>
+										</li>
+										<li>
+											<a href="#">Настройки</a>
+										</li>
+										<li class="divider"></li>
+										<div class="clear-btn">
+											<a href="#" class="btn btn-primary">Добавить историю</a>
+											<a href="#" class="btn btn-primary">Добавить фото</a>
+										</div>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-2 col-xs-3">
+								<a href="#">
+									<div class="logo"></div>
+								</a>
+							</div>
+							<div class="col-md-5 col-sm-5 col-xs-9">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Поиск по сайту">
+									<span class="input-group-btn">
+										<button class="btn btn-secondary" type="button">.</button>
+									</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-5 hidden-xs">
+								<div class="history-area">
+									<h3>Расскажите свою историю!</h3>
+									<h4>Это увлекательно и просто!</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="second-page-area"></div>
+
+			<div class="container">
+
+				<div class="bread-pagg">
+					<a href="#" class="home">Главная</a>
+					/
+					<a href="#" class="sec-pagg">Участники</a>
+					/
+					<span>8273984</span>
+				</div>
+
+			</div>
+
+			<section class="second-content page-menu content-nt">
+				<div class="container">
+
+					<h2 class="before-h2 history-filtr">Истории</h2>
+					<div class="bottom-menu history-filtr">
+						<a class="active" href="#">Все (35)</a>
+						<a href="#">Новые (34)</a>
+						<a href="#">Популярные (1)</a>
+					</div>
+
+					<div class="gds-nl flr n-flt2 hidden-sm hidden-xs hidden-md"> <strong>Сортировать по:</strong>
+						<select>
+							<option>Популярности</option>
+						</select>
+					</div>
+
+					<div class="gds-nl flr n-flt hidden-sm hidden-xs hidden-md"> <strong>Показывать по:</strong>
+						<select>
+							<option>20</option>
+						</select>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="main-middle-block">
+				<div class="container">
+
+					<div class="page-mobile-padding">
+						<div class="hst-area"></div>
+
+						<!-- desctop section -->
+
+						<div class="row hidden-xs hidden-sm">
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Лозовой Антон</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/sp2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Троицкий монастырь</a>
+										</h2>
+										<p>
+											В описи Мурома 1624 г. напротив Благовещенского монастыря отмечена деревянная шатровая церковь Живоначальной Троицы. В 1642-1643 гг. на месте этого деревянного...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Мищенко Александра</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Онищенко Виктория</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Лозовой Антон</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/sp2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Троицкий монастырь</a>
+										</h2>
+										<p>
+											В описи Мурома 1624 г. напротив Благовещенского монастыря отмечена деревянная шатровая церковь Живоначальной Троицы. В 1642-1643 гг. на месте этого деревянного...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Мищенко Александра</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Онищенко Виктория</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Лозовой Антон</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/sp2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Троицкий монастырь</a>
+										</h2>
+										<p>
+											В описи Мурома 1624 г. напротив Благовещенского монастыря отмечена деревянная шатровая церковь Живоначальной Троицы. В 1642-1643 гг. на месте этого деревянного...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Мищенко Александра</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Онищенко Виктория</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/sp2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Добронин Виктор</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+						<!-- desctop section -->
+
+						<!-- mobile section -->
+
+						<div class="row slider single-item  hidden-md hidden-lg">
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Лозовой Антон</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/sp2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Троицкий монастырь</a>
+										</h2>
+										<p>
+											В описи Мурома 1624 г. напротив Благовещенского монастыря отмечена деревянная шатровая церковь Живоначальной Троицы. В 1642-1643 гг. на месте этого деревянного...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Мищенко Александра</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/m2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Онищенко Виктория</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-md-3 ">
+								<div class="nb-spas">
+									<div class="sp1">
+										<img class="img-responsive" src="img/sp2.png">
+										<div class="show-content">
+											<a href="#" class="scrt sta1">
+												<i class="fa fa-play"></i>
+											</a>
+											<a href="#" class="scrt sta2">
+												<i class="fa fa-heart"></i>
+											</a>
+											<a href="#" class="scrt sta3">
+												<i class="fa fa-comment"></i>
+											</a>
+										</div>
+										<div class="oblt">1910-1920-е</div>
+										<div class="fll soc-area">
+											<a href="#">
+												<div class="s1">
+													<img src="img/soc1.png" alt="">
+													<span>33</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl2">
+													<img src="img/soc2.png" alt="">
+													<span>97</span>
+												</div>
+											</a>
+											<a href="#">
+												<div class="s1 sl3">
+													<img src="img/soc3.png" alt="">
+													<span>11</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="sp-down">
+										<h2>
+											<a href="#">Спасский монастырь. Спасо-Преображенский собор</a>
+										</h2>
+										<p>
+											Спасо-Преображенский монастырь - один из древнейших монастырей на Руси. Первый раз на страницах летописей он упоминается под 1096 г. Это было...
+										</p>
+									</div>
+									<hr>
+									<div class="lon-area">
+										<div class="logo-ava">
+											<img src="img/av1.png">
+											<span>Добронин Виктор</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+						<!-- mobile section -->
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<footer class="footer">
+				<div class="container">
+					<div class="foot-menu fll">
+						<div class="cont-area">
+							<a href="#">Контакты</a>
+							<a href="#">Вопросы и ответы</a>
+							<a href="#">Политики</a>
+						</div>
+						<p class="hidden-xs">© 1998-2016, Муромский историко-художественный музей</p>
+						<a href="http://bel-kot.com" target="_blank" class="hdlk">"Создание сайта - Белый Кот"</a>
+					</div>
+
+					<div class="foot-menu flr">
+						<img src="img/plogo.png">
+						<img src="img/slogo.png"></div>
+					<p class="hidden-sm hidden-md hidden-lg">© 1998-2016, Муромский историко-художественный музей</p>
+					
+				</div>
+			</footer>
+
+		</div>
+
+		<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModal" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">Регистрация прошла успешно</h4>
+					</div>
+					<div class="modal-body">
+
+						<div class="slider">
+							<div>Hover me and I'll pause</div>
+							<div>Unhover and I'll resume</div>
+							<div>But not if you've paused me</div>
+							<div>I wont restart when changing slides</div>
+							<div>I will also pause when focussed</div>
+							<div>Huzzah.</div>
+						</div>
+
+						<button class="go">Prev</button>
+
+						<button class="pause">Play/Pause the Slider</button>
+
+						<button class="go2">Next</button>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- инициализация скриптов -->
+
+		<script src="js/scripts.js"></script>
+
+		<script>
+				 
+ 	if($(window).width() > 768) {
+
+
+$(".scroller-b").mCustomScrollbar({
+					axis:"y",			
+					autoDraggerLength:false,
+				
+				});	
+
+
+} else { 
+    // change functionality for larger screens
+}
+	
+			</script>
+
+		<!-- инициализация скриптов -->
+	</div>
+</body>
+</html>
