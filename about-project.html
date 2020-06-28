@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <title>html</title>
     <meta name="viewport" content="width=400">
-    <link rel="stylesheet" href="plugins/form-attach/style.css" type="text/css" media="screen, projection" />
     <link rel="stylesheet" href="plugins/CustomScrollbarr/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
@@ -25,7 +24,7 @@
     <script src="plugins/fotorama/fotorama.js"></script>
     <script src="plugins/ckeditor/ckeditor.js"></script>
     <script src="plugins/ckeditor/js/sample.js"></script>
-    <script type="text/javascript" src="plugins/form-attach/scripts.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -111,6 +110,9 @@
                                 <a href="#" class="exit"> <i class="fa fa-sign-out" aria-hidden="true"></i>
                                 </a>
                                 <div class="ava-img-area dropdown" data-toggle="dropdown">
+                                    <a href="#">
+                                        <div class="pluso-area"></div>
+                                    </a>
                                     <img src="img/av1.png">
                                     <span>Лозовский Антон</span>
                                     <ul class="dropdown-menu">
@@ -173,10 +175,10 @@
                         </div>
                         <div class="ul-area-menu">
                             <ul>
-                                <li>
+                                <li class="active">
                                     <a class="ab1" href="#">О проекте</a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a class="ab2" href="#">Контакты</a>
                                 </li>
                                 <li>
@@ -189,84 +191,117 @@
                         </div>
                     </div>
                     <div class="right-area-faq">
-                        <div class="team-area txt">
-                            <h3>Контакты</h3>
+                        <div class="bg-main-area">
+                            <h3>Вопросы и ответы</h3>
+                            <h4>
+                                «Виртуальная история» - это историко-культурный инновационный проект
+                            </h4>
+                        </div>
+                        <div class="txt">
+                            <h4>
+                                Компания МТС совместно с Муромским историко-художественным музеем представляют историко-культурный инновационный проект «Виртуальная история».
+                            </h4>
                             <p>
-                                Государственное бюджетное учреждение культуры Владимирской области «Муромский историко-художественный музей»
+                                «Виртуальная история» - это историко-культурный инновационный проект МТС на основе технологии «дополненной реальности», позволяющей отображать на экране смартфона или планшета облик городов в исторической ретроспективе.
                             </p>
-                            <div class="admin-area row">
-                                <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
-                                    <h4>Администрация музея</h4>
-                                    <p>ул. Московская, д. 13, г. Муром, Владимирская обл., 602267</p>
-                                    <p>(49234) 3-23-59, 3-35-47</p>
-                                    <a href="mailto:oklandia@mail.ru" class="mail-post">oklandia@mail.ru</a>
-                                </div>
-                                <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6">
-                                    <h4>Руководитель проекта</h4>
-                                    <p>
-                                        <img src="img/ava-uc.png">Елена Владимировна Кулагина</p>
-                                    <p>(49234) 3-62-60 (49234)3-35-47</p>
-                                    <a href="mailto:8872844@museum-murom.ru" class="mail-post">8872844@museum-murom.ru</a>
+                            <p>
+                                На сайте музея с помощью карт Google Maps, к которым «приколоты» фотографии и описания достопримечательностей, можно увидеть Муром начала ХХ века. Представленные в проекте фотографии происходят из личных коллекций двух «отцов-основателей» Муромского музея - краеведа Николая Гавриловича Добрынкина и городского головы Ивана Петровича Мяздрикова. В фондах музея сохранилось более ста видов города Мурома их авторства конца XIX - начала ХХ века.
+                            </p>
+                        </div>
+                        <div class="fotorama" data-max-width="100%" data-nav="thumbs" data-thumbwidth="190" data-thumbheight="120" data-maxheight="700">
+                            <a href="http://youtube.com/watch?v=C3lWwBslWqg">
+                                <img class="img-responsive" src="img/bg.jpg"></a>
+                            <img class="img-responsive" src="img/bg.jpg">
+                            <img class="img-responsive" src="img/bg.jpg">
+                            <img class="img-responsive" src="img/bg.jpg">
+                            <img class="img-responsive" src="img/bg.jpg">
+                            <img class="img-responsive" src="img/bg.jpg">
+                            <img class="img-responsive" src="img/bg.jpg">
+                            <img class="img-responsive" src="img/bg.jpg">
+                            <img class="img-responsive" src="img/bg.jpg"></div>
+                        <div class="team-area">
+                            <h3>Команда</h3>
+                        </div>
+                        <div class="card-team">
+                            <div class="l-card card-gn">
+                                <img src="img/ava-table2.png">
+                                <div class="team-right">
+                                    <h2>Разумовская Анастасия Александровна</h2>
+                                    <p>Заведующая выставочным отделением</p>
+                                    <div class="contacts-team">
+                                        <p>(49234)3-35-47 - рабочий;</p>
+                                        <p>8-910-170-86-75</p>
+                                        <a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="bg-main-area"></div>
-                        <div class="team-area txt feedback">
-                            <h3>Обратная связь</h3>
-                            <form>
-                                <div class="sm-fr clearfix">
-                                    <div class=" n-form">
-                                        <label for="">ФИО *</label>
-                                        <input class="form-control" type="text"></div>
-                                </div>
-                                <div class="sm-fr clearfix">
-                                    <div class=" n-form">
-                                        <label for="">E-mail *</label>
-                                        <input class="form-control" type="text"></div>
-                                </div>
-                                <div class="sm-fr clearfix">
-                                    <div class=" n-form">
-                                        <label for="">Тема</label>
-                                        <select class="formstyler">
-                                            <option>Тема 1</option>
-                                            <option>Тема 2</option>
-                                        </select>
+                            <div class="r-card card-gn">
+                                <img src="img/ava-table2.png">
+                                <div class="team-right">
+                                    <h2>Разумовская Анастасия Александровна</h2>
+                                    <p>Заведующая выставочным отделением</p>
+                                    <div class="contacts-team">
+                                        <p>(49234)3-35-47 - рабочий;</p>
+                                        <p>8-910-170-86-75</p>
+                                        <a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
                                     </div>
                                 </div>
-                                <div class="sm-fr clearfix">
-                                    <div class=" n-form">
-                                        <label for="">Сообщение *</label>
-                                        <input class="form-control" type="text"></div>
+                            </div>
+                            <div class="l-card card-gn">
+                                <img src="img/ava-table2.png">
+                                <div class="team-right">
+                                    <h2>Разумовская Анастасия Александровна</h2>
+                                    <p>Заведующая выставочным отделением</p>
+                                    <div class="contacts-team">
+                                        <p>(49234)3-35-47 - рабочий;</p>
+                                        <p>8-910-170-86-75</p>
+                                        <a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+                                    </div>
                                 </div>
-                                <div class="p-rel">
-                                    <div class="type_file tril_file" id="file-upload_1">
-                                        <input type="file" class="inputFile" name="file1" value="" />
-                                        <div class="fonTypeFile">Прикрепить файл</div>
-                                        <i class="file-upload_1"></i>
+                            </div>
+                            <div class="r-card card-gn">
+                                <img src="img/ava-table2.png">
+                                <div class="team-right">
+                                    <h2>Разумовская Анастасия Александровна</h2>
+                                    <p>Заведующая выставочным отделением</p>
+                                    <div class="contacts-team">
+                                        <p>(49234)3-35-47 - рабочий;</p>
+                                        <p>8-910-170-86-75</p>
+                                        <a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
                                     </div>
-                                    <div class="type_file tril_file" id="file-upload_2" style="display: none;">
-                                        <input type="file" class="inputFile" name="file2" value="" />
-                                        <div class="fonTypeFile">Прикрепить файл</div>
-                                        <i class="file-upload_2"></i>
-                                    </div>
-                                    <div class="type_file tril_file" id="file-upload_3" style="display: none;">
-                                        <input type="file" class="inputFile" name="file3" value="" />
-                                        <div class="fonTypeFile">Прикрепить файл</div>
-                                        <i class="file-upload_3"></i>
-                                    </div>
-                                    <div class="type_file tril_file" id="file-upload_4" style="display: none;">
-                                        <input type="file" class="inputFile" name="file4" value="" />
-                                        <div class="fonTypeFile">Прикрепить файл</div>
-                                        <i class="file-upload_4"></i>
-                                    </div>
-                                    <div class="b_add">
-                                        <span id="add">прикрепить еще файл</span>
-                                    </div>
-                                    <button class="btn btns flr">Отправить</button>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="l-card card-gn">
+                                <img src="img/ava-table2.png">
+                                <div class="team-right">
+                                    <h2>Разумовская Анастасия Александровна</h2>
+                                    <p>Заведующая выставочным отделением</p>
+                                    <div class="contacts-team">
+                                        <p>(49234)3-35-47 - рабочий;</p>
+                                        <p>8-910-170-86-75</p>
+                                        <a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="r-card card-gn">
+                                <img src="img/ava-table2.png">
+                                <div class="team-right">
+                                    <h2>Разумовская Анастасия Александровна</h2>
+                                    <p>Заведующая выставочным отделением</p>
+                                    <div class="contacts-team">
+                                        <p>(49234)3-35-47 - рабочий;</p>
+                                        <p>8-910-170-86-75</p>
+                                        <a href="mailto:choomakov@mit.ru">choomakov@mit.ru</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-team">
+                                <a href="#" class="button-area-a"> <strong>Показать еще 23 сотрудника</strong>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                </div>
             </section>
         </div>
         <footer class="footer">
@@ -287,10 +322,47 @@
             </div>
         </footer>
     </div>
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Регистрация прошла успешно</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="slider">
+                        <div>Hover me and I'll pause</div>
+                        <div>Unhover and I'll resume</div>
+                        <div>But not if you've paused me</div>
+                        <div>I wont restart when changing slides</div>
+                        <div>I will also pause when focussed</div>
+                        <div>Huzzah.</div>
+                    </div>
+                    <button class="go">Prev</button>
+                    <button class="pause">Play/Pause the Slider</button>
+                    <button class="go2">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- инициализация скриптов -->
     <script src="js/scripts.js"></script>
+    <script>
+    if ($(window).width() > 768) {
+
+
+        $(".scroller-b").mCustomScrollbar({
+            axis: "y",
+            autoDraggerLength: false,
+
+        });
+
+
+    } else {
+        // change functionality for larger screens
+    }
+    </script>
     <!-- инициализация скриптов -->
-    </div>
 </body>
 
 </html>

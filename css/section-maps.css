@@ -1,12 +1,12 @@
-
-#map{
-	height: 590px;
+#map {
+    height: 590px;
 }
 
 .fll.soc-area .s1 {
     float: left;
     margin-top: -3px;
 }
+
 .s1 {
     background: #F3F3F3;
     margin-left: 0;
@@ -48,9 +48,9 @@
 .ymaps-2-1-44-balloon__close+.ymaps-2-1-44-balloon__content>ymaps {
     width: 280px !important;
     height: auto !important;
-   -webkit-box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.32);
--moz-box-shadow:    0px 1px 14px 0px rgba(50, 50, 50, 0.32);
-box-shadow:         0px 1px 14px 0px rgba(50, 50, 50, 0.32);
+    -webkit-box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.32);
+    -moz-box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.32);
+    box-shadow: 0px 1px 14px 0px rgba(50, 50, 50, 0.32);
 }
 
 
@@ -91,7 +91,7 @@ box-shadow:         0px 1px 14px 0px rgba(50, 50, 50, 0.32);
     padding-right: 48px;
 }
 
-.sp2 + .sp-down h2 {
+.sp2+.sp-down h2 {
     padding-right: 50px;
 }
 
@@ -106,9 +106,9 @@ box-shadow:         0px 1px 14px 0px rgba(50, 50, 50, 0.32);
     line-height: 1.3em;
 }
 
-.sp-down h2 a:hover{
-	text-decoration: none;
-	color: #000;
+.sp-down h2 a:hover {
+    text-decoration: none;
+    color: #000;
 }
 
 span.spa-nw {
@@ -166,18 +166,18 @@ span.spa-nw {
     padding: 0 !important;
 }
 
-.spl2{
-	padding: 10px;
+.spl2 {
+    padding: 10px;
 }
 
 .ymaps-2-1-44-balloon__layout {
     overflow: visible !important;
 }
 
-.spl2 h2{
-	font-size: 14px;
-	text-align: center;
-		font-weight: bold;
+.spl2 h2 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .ymaps-2-1-44-balloon__close {
@@ -192,7 +192,7 @@ span.spa-nw {
     line-height: 38px;
 }
 
-.spl2  input {
+.spl2 input {
     opacity: 0;
     filter: alpha(opacity:0);
     font-size: 199px;
@@ -214,8 +214,8 @@ span.spa-nw {
     margin-bottom: 20px;
 }
 
-.sple:hover{
-	opacity: 0.9;
+.sple:hover {
+    opacity: 0.9;
 }
 
 .sple:before {
@@ -251,12 +251,12 @@ span.spa-nw {
 }
 
 
-.sl2{
-	background: #34495e;
+.sl2 {
+    background: #34495e;
 }
 
-.sl3{
-	background: #0e9cf6;
+.sl3 {
+    background: #0e9cf6;
 }
 
 .s1 img {
@@ -277,10 +277,11 @@ span.spa-nw {
 }
 
 
-.spl2 a{
-	cursor: pointer;
+.spl2 a {
+    cursor: pointer;
 }
 
-.spl2 a:hover, .spl2 h2:hover{
-	text-decoration: none !important;
+.spl2 a:hover,
+.spl2 h2:hover {
+    text-decoration: none !important;
 }

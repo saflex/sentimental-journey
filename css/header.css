@@ -10,8 +10,8 @@ header a.active {
     margin-right: 40px;
 }
 
-.input-group .form-control{
-font-family: 'Noto Serif', serif;	
+.input-group .form-control {
+    font-family: 'Noto Serif', serif;
 }
 
 .reg-area {
@@ -27,9 +27,9 @@ font-family: 'Noto Serif', serif;
     margin-right: 42px;
 }
 
-a.activers:hover, 
-a.activers:focus{
-	color: #fff !important;
+a.activers:hover,
+a.activers:focus {
+    color: #fff !important;
 }
 
 .reg-area {
@@ -46,7 +46,8 @@ a.activers:focus{
     margin-top: 14px;
 }
 
-.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+.input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group {
     padding-right: 29px !important;
 }
 
@@ -81,8 +82,8 @@ a.activers:focus{
 }
 
 
-.top-header a{
-	text-decoration: none;
+.top-header a {
+    text-decoration: none;
 }
 
 a.activers {
@@ -115,15 +116,15 @@ a.activers {
     float: right;
 }
 
-.history-area h4{
-	color: #757575;
-	font-family: 'Noto Serif', serif;
-	font-size: 14px;
+.history-area h4 {
+    color: #757575;
+    font-family: 'Noto Serif', serif;
+    font-size: 14px;
 }
 
 
-.reg-area{
-	font-family: 'Noto Serif', serif;
+.reg-area {
+    font-family: 'Noto Serif', serif;
 }
 
 .reg-area a {
@@ -133,8 +134,8 @@ a.activers {
     padding-top: 9px;
 }
 
-button.btn.btn-secondary{
-	color: #73322E;
+button.btn.btn-secondary {
+    color: #73322E;
 }
 
 button.btn.btn-secondary:before {
@@ -148,28 +149,28 @@ button.btn.btn-secondary:before {
 }
 
 
-button.btn.btn-secondary{
-	background: #73322E;
+button.btn.btn-secondary {
+    background: #73322E;
 }
 
-.top-header li a:hover{
-	color: #304457;
+.top-header li a:hover {
+    color: #304457;
 }
 
-.top-header li a.active{
-	    color: #73322e;
+.top-header li a.active {
+    color: #73322e;
 }
 
-.pluso-area:hover{
-	opacity: 0.8;
+.pluso-area:hover {
+    opacity: 0.8;
 }
 
-.reg-area a:hover{
-	opacity: 0.8;
+.reg-area a:hover {
+    opacity: 0.8;
 }
 
-.reg-area a.activers:hover{
-	opacity: 1;
+.reg-area a.activers:hover {
+    opacity: 1;
 }
 
 
@@ -227,8 +228,8 @@ ul.dropdown-menu li {
 
 
 
-.dropdown-menu .divider{
-	margin-top: 15px;
+.dropdown-menu .divider {
+    margin-top: 15px;
 }
 
 ul.dropdown-menu a {
@@ -265,8 +266,8 @@ ul.dropdown-menu .exit {
 }
 
 
-.navbar-header.open .dropdown-menu{
-	display: block;
+.navbar-header.open .dropdown-menu {
+    display: block;
 }
 
 

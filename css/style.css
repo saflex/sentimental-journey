@@ -3128,14 +3128,6 @@ img.ui-datepicker-trigger {
 }
 
 
-input.form-control.sdlk:before {
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    right: 41px;
-}
 
 .soc.fll.big-socl {
     margin-bottom: 15px;
@@ -3146,9 +3138,6 @@ input.form-control.sdlk:before {
 .mxtl{
 	height: 100px !important;
 }
-
-
-
 
 #bar
 {
@@ -3167,6 +3156,11 @@ height:16px;
     -moz-border-radius: 5px;
     display: none;
 }
+
+textarea
+{
+    min-width: 100%;
+    max-width: 100%;}
 
 textarea#contentbox{
 	max-height: 100px !important;
